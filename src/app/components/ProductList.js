@@ -1,5 +1,5 @@
 import React from "react";
-import { data } from "../data"; // Según la ubicación
+import { data } from "../data"; // nos sirve para mostrar la lista de los productos de la tienda
 
 export const ProductList = ({
   allProducts,
@@ -9,6 +9,7 @@ export const ProductList = ({
   total,
   setTotal,
 }) => {
+  // Función para agregar un producto al carrito
   const onAddProduct = (product) => {
     if (allProducts.find((item) => item.id === product.id)) {
       const products = allProducts.map((item) =>
@@ -18,6 +19,8 @@ export const ProductList = ({
       setCountProducts(countProducts + product.quantity);
       return setAllProducts([...products]);
     }
+
+     // Si el producto no está en el carrito, lo agregamos con una cantidad inicial de 1
     setTotal(total + product.price * product.quantity);
     setCountProducts(countProducts + product.quantity);
     setAllProducts([...allProducts, { ...product, quantity: 1 }]); // Asegúrate de agregar la cantidad
