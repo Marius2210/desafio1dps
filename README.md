@@ -2,7 +2,7 @@
 ## Integrantes del desafió
 
 - **Danilo Antonio Martínez Miranda** - Carnet: `MM240370`
-- **Mario Ernesto** - Carnet: `MP240819`
+- **Mario Ernesto Meléndez Portillo** - Carnet: `MP240819`
 
 ## Enlace del video
 
